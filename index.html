@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cascading Style Sheets</title>
+	<style type="text/css">
+		div{color:black;
+			/*color:字体颜色*/
+			border:2px solid red;
+			/*border: 边框----边框宽度，边框形态，边框颜色*/
+			width: 200px;
+			/*width: 元素宽度*/
+			height: 100px;
+			/*height: 元素高度*/
+			background-color: orange;
+			/*background-color: 背景颜色*/
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<!-- 1、link标签进行链接
+			rel="stylesheet"：当前文档与被链接文档之间的关系
+			type="text/css"：链接文档的类型
+			href="css/style.css"：链接地址
+			开发中经常使用的方式，极其推荐
+			实现了CSS（表现）与HTML（结构）的分离，便于以后代码的修改
+			可以作用于多个页面
+			<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		2、<style>@import url(CSS/style.css)</style>
+	 -->
+
+
+</head>
+<body>
+	<dl>
+		<dt>Css:</dt>
+		<dd>Cascading style sheets，层叠样式表</dd>
+		<!-- 表现标准语言 -->
+	</dl> 
+	<dl>
+		<dt>CSS语法</dt>
+		<dd>每个CSS样式都是由两部分组成，选择符和声明，声明又有属性和属性值组成</dd>
+		<dd>每个属性都必须写在花括号里面，属性与属性值之间用英文冒号链接</dd>
+		<dd>属性和属性之间用分号分割</dd>
+		<dd>当一个属性有多个属性值的时候，属性值之间部分用空格隔开，不分先后顺序</dd>
+	</dl> 
+	<dl>
+		<dt>三种使用方式</dt>
+		<dd>行内样式</dd>
+		<dd>内嵌样式</dd>
+		<dd>外部样式</dd>
+	</dl>
+		<div>
+			<!-- div主要用于分割模块 -->
+			i love you, forever.
+		</div>
+		<div>
+			me too
+		</div>
+			<dl style="color: red;background-color:gray;border: 2PX solid blue;width: 200PX;height: 100PX">
+				<dt>行内样式</dt>
+				<dd>只对当前标签起作用</dd>
+				<dd>没有实现Html与CSS的分离</dd>
+			</dl>
+		<div><dl>
+				<dt>内嵌样式</dt>
+			</dl>
+		</div>
+			<h3>我是H3标签</h3>
+
+</body>
+</html>
